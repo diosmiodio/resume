@@ -1,468 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>✨Dio's Resume ✨</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨Dio's Resume ✨</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-      line-height: 1.4;
-      color: #2d3748;
-      background: #f7fafc;
-      padding: 40px 20px;
-    }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.4;
+            color: #2d3748;
+            background: #f7fafc;
+            padding: 40px 20px;
+        }
 
-    .resume {
-      max-width: 850px;
-      margin: 0 auto;
-      background: white;
-      padding: 60px 70px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
+        .resume {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px 70px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
 
-    .resume .header,
-    .resume .section {
-      text-align: left;
-    }
+        .resume .header,
+        .resume .section {
+            text-align: left;
+        }
 
-    .floating-pdf-button {
-      position: fixed;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%) translateY(20px);
-      background: #1a202c;
-      color: white;
-      border: none;
-      padding: 16px 20px;
-      border-radius: 50px;
-      font-size: 15px;
-      font-weight: 600;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-      transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-      transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-      background 0.2s,
-      box-shadow 0.3s;
-      opacity: 0;
-      pointer-events: none;
-      z-index: 1000;
-      width: auto;
-    }
+        .floating-pdf-button {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: #1a202c;
+            color: white;
+            border: none;
+            padding: 16px 20px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+            transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+            transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+            background 0.2s,
+            box-shadow 0.3s;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 1000;
+            width: auto;
+        }
 
-    .floating-pdf-button.visible {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0);
-      pointer-events: all;
-    }
+        .floating-pdf-button.visible {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+            pointer-events: all;
+        }
 
-    .floating-pdf-button:hover {
-      background: #2d3748;
-      transform: translateX(-50%) translateY(-2px);
-      box-shadow: 0 6px 24px rgba(0,0,0,0.3);
-    }
+        .floating-pdf-button:hover {
+            background: #2d3748;
+            transform: translateX(-50%) translateY(-2px);
+            box-shadow: 0 6px 24px rgba(0,0,0,0.3);
+        }
 
-    .floating-pdf-button:active {
-      transform: translateX(-50%) translateY(0);
-    }
+        .floating-pdf-button:active {
+            transform: translateX(-50%) translateY(0);
+        }
 
-    .close-btn {
-      background: transparent;
-      border: none;
-      color: white;
-      font-size: 20px;
-      cursor: pointer;
-      padding: 0;
-      margin-left: 8px;
-      width: 20px;
-      height: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0.7;
-      transition: opacity 0.2s;
-    }
+        .close-btn {
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 0;
+            margin-left: 8px;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
 
-    .close-btn:hover {
-      opacity: 1;
-    }
+        .close-btn:hover {
+            opacity: 1;
+        }
 
-    @media (max-width: 768px) {
-      body {
-        padding: 20px 10px;
-      }
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
 
-      .resume {
-        padding: 40px 30px;
-      }
+            .resume {
+                padding: 40px 30px;
+            }
 
-      .floating-pdf-button {
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%) translateY(20px);
-        width: calc(100% - 40px);
-        max-width: 400px;
-        justify-content: center;
-      }
+            .floating-pdf-button {
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%) translateY(20px);
+                width: calc(100% - 40px);
+                max-width: 400px;
+                justify-content: center;
+            }
 
-      .floating-pdf-button.visible {
-        transform: translateX(-50%) translateY(0);
-      }
+            .floating-pdf-button.visible {
+                transform: translateX(-50%) translateY(0);
+            }
 
-      .name {
-        font-size: 28px;
-      }
+            .name {
+                font-size: 28px;
+            }
 
-      .title {
-        font-size: 16px;
-      }
+            .title {
+                font-size: 16px;
+            }
 
-      .contact {
-        flex-direction: row;
-        gap: 8px;
-        line-height: 0.8;
-      }
+            .contact {
+                flex-direction: row;
+                gap: 8px;
+                line-height: 0.8;
+            }
 
-      .entry-header, .project-header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+            .entry-header, .project-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
 
-      .entry-date {
-        margin-top: 4px;
-      }
-    }
+            .entry-date {
+                margin-top: 4px;
+            }
+        }
 
-    .header {
-      margin-bottom: 40px;
-      padding-bottom: 24px;
-      border-bottom: 2px solid #4a5568;
-    }
+        .header {
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 2px solid #4a5568;
+        }
 
-    .name {
-      font-size: 36px;
-      font-weight: 700;
-      color: #1a202c;
-      margin-bottom: 8px;
-      letter-spacing: -0.5px;
-    }
+        .name {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
 
-    .title {
-      font-size: 18px;
-      color: #4a5568;
-      margin-bottom: 16px;
-    }
+        .title {
+            font-size: 18px;
+            color: #4a5568;
+            margin-bottom: 16px;
+        }
 
-    .contact {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      font-size: 14px;
-      color: #718096;
-    }
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 14px;
+            color: #718096;
+        }
 
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
 
-    .contact a {
-      color: #718096;
-      text-decoration: none;
-    }
+        .contact a {
+            color: #718096;
+            text-decoration: none;
+        }
 
-    .contact a:hover {
-      color: #2d3748;
-      text-decoration: underline;
-    }
+        .contact a:hover {
+            color: #2d3748;
+            text-decoration: underline;
+        }
 
-    .section {
-      margin-bottom: 36px;
-    }
+        .section {
+            margin-bottom: 36px;
+        }
 
-    .section-title {
-      font-size: 20px;
-      font-weight: 700;
-      color: #1a202c;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      font-size: 14px;
-    }
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 14px;
+        }
 
-    .entry, .education-item, .project {
-      margin-bottom: 28px;
-    }
+        .entry, .education-item, .project {
+            margin-bottom: 28px;
+        }
 
-    .entry:last-child, .education-item:last-child, .project:last-child {
-      margin-bottom: 0;
-    }
+        .entry:last-child, .education-item:last-child, .project:last-child {
+            margin-bottom: 0;
+        }
 
-    .entry-header, .project-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 4px;
-    }
+        .entry-header, .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
 
-    .entry-title, .project-name {
-      font-size: 16px;
-      font-weight: 600;
-      color: #1a202c;
-    }
+        .entry-title, .project-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a202c;
+        }
 
-    .entry-employer, .degree {
-      font-size: 15px;
-      color: #4a5568;
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
+        .entry-employer, .degree {
+            font-size: 15px;
+            color: #4a5568;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-    .company-logo {
-      width: 20px;
-      height: 20px;
-      object-fit: contain;
-      flex-shrink: 0;
-    }
+        .company-logo {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
 
-    .entry-date {
-      font-size: 14px;
-      color: #718096;
-      white-space: nowrap;
-    }
+        .entry-date {
+            font-size: 14px;
+            color: #718096;
+            white-space: nowrap;
+        }
 
-    .entry-description, .project-description {
-      margin-top: 12px;
-    }
+        .entry-description, .project-description {
+            margin-top: 12px;
+        }
 
-    .entry-description ul, .project-description ul {
-      margin-left: 20px;
-    }
+        .entry-description ul, .project-description ul {
+            margin-left: 20px;
+        }
 
-    .entry-description li, .project-description li {
-      margin-bottom: 8px;
-      color: #4a5568;
-      font-size: 15px;
-    }
+        .entry-description li, .project-description li {
+            margin-bottom: 8px;
+            color: #4a5568;
+            font-size: 15px;
+        }
 
-    .skills-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
 
-    .skill-category {
-      flex: 1;
-      min-width: 200px;
-    }
+        .skill-category {
+            flex: 1;
+            min-width: 200px;
+        }
 
-    .skill-category-title {
-      font-weight: 600;
-      color: #2d3748;
-      font-size: 14px;
-      margin-bottom: 6px;
-    }
+        .skill-category-title {
+            font-weight: 600;
+            color: #2d3748;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
 
-    .skill-list {
-      color: #4a5568;
-      font-size: 14px;
-      line-height: 1.8;
-    }
+        .skill-list {
+            color: #4a5568;
+            font-size: 14px;
+            line-height: 1.8;
+        }
 
-    .summary {
-      color: #4a5568;
-      font-size: 15px;
-      line-height: 1.7;
-    }
+        .summary {
+            color: #4a5568;
+            font-size: 15px;
+            line-height: 1.7;
+        }
 
-    @media print {
-      body {
-        background: white;
-        padding: 0;
-      }
-      .resume {
-        box-shadow: none;
-        padding: 40px;
-      }
-      .floating-pdf-button {
-        display: none;
-      }
-    }
-  </style>
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .resume {
+                box-shadow: none;
+                padding: 40px;
+            }
+            .floating-pdf-button {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
 <button class="floating-pdf-button" id="pdfButton">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-    <polyline points="14 2 14 8 20 8"></polyline>
-    <line x1="16" y1="13" x2="8" y2="13"></line>
-    <line x1="16" y1="17" x2="8" y2="17"></line>
-  </svg>
-  Print PDF
-  <button class="close-btn" id="closeButton">×</button>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+        <polyline points="14 2 14 8 20 8"></polyline>
+        <line x1="16" y1="13" x2="8" y2="13"></line>
+        <line x1="16" y1="17" x2="8" y2="17"></line>
+    </svg>
+    Print PDF
+    <button class="close-btn" id="closeButton">×</button>
 </button>
 
 <div class="resume">
-  <header class="header">
-    <h1 class="name">Dionisio Blanco</h1>
-    <div class="title">Senior Technical Designer, VR/AR</div>
-    <div class="contact">
-      <span class="contact-item"><a href="mailto:hi@diosmiodio.com">hi@diosmiodio.com</a></span>
-      <span class="contact-item">•</span>
-      <span class="contact-item"><a href="https://diosmiodio.com" target="_blank">diosmiodio.com</a></span>
-    </div>
-  </header>
+    <header class="header">
+        <h1 class="name">Dionisio Blanco</h1>
+        <div class="title">Senior Technical Designer, VR/AR</div>
+        <div class="contact">
+            <span class="contact-item"><a href="mailto:hi@diosmiodio.com">hi@diosmiodio.com</a></span>
+            <span class="contact-item">•</span>
+            <span class="contact-item"><a href="https://diosmiodio.com" target="_blank">diosmiodio.com</a></span>
+        </div>
+    </header>
 
-  <section class="section">
-    <h2 class="section-title">Summary</h2>
-    <p class="summary">
-      I have an unrelenting passion for solving hard problems and learning the best mediums to solve them.
-      I am an engineer/designer/artist hybrid with 9+ years of building games and experiences for VR/AR.
-    </p>
-  </section>
+    <section class="section">
+        <h2 class="section-title">Summary</h2>
+        <p class="summary">
+            I have an unrelenting passion for solving hard problems and learning the best mediums to solve them.
+            I am an engineer/designer/artist hybrid with 9+ years of building games and experiences for VR/AR.
+        </p>
+    </section>
 
-  <section class="section">
-    <h2 class="section-title">Experience</h2>
+    <section class="section">
+        <h2 class="section-title">Experience</h2>
 
-    <div class="entry">
-      <div class="entry-header">
-        <div class="entry-title">Senior Technical Game Designer</div>
-        <div class="entry-date">May 2023 – Present</div>
-      </div>
-      <div class="entry-employer">
-        <img src="images/OuroLogo.png" alt="OURO Interactive logo" class="company-logo">
-        OURO Interactive, Oculus Studios (Meta)
-      </div>
-      <div class="entry-description">
-        <ul>
-          <li>Shipped Super Strike, a cross-platform high-flying arcade shooter on Horizon Worlds.</li>
-          <li>Shipped Super Rumble, an arcade shooter on Horizon Worlds. (Typescript, Modo, UGC Horizon Worlds)</li>
-          <li>Developed many systems, AI Behaviors, etc for an unannounced co-op VR rouge-lite.</li>
-          <li>Modified core engine code in Unity to support features for our game projects</li>
-        </ul>
-      </div>
-    </div>
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Senior Technical Game Designer</div>
+                <div class="entry-date">May 2023 – Present</div>
+            </div>
+            <div class="entry-employer">
+                <img src="images/OuroLogo.png" alt="OURO Interactive logo" class="company-logo">
+                OURO Interactive, Oculus Studios (Meta)
+            </div>
+            <div class="entry-description">
+                <ul>
+                    <li>Shipped Super Strike, a cross-platform high-flying arcade shooter on Horizon Worlds.</li>
+                    <li>Shipped Super Rumble, an arcade shooter on Horizon Worlds. (Typescript, Modo, UGC Horizon Worlds)</li>
+                    <li>Developed many systems, AI Behaviors, etc for an unannounced co-op VR rouge-lite.</li>
+                    <li>Modified core engine code in Unity to support features for our game projects</li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="entry">
-      <div class="entry-header">
-        <div class="entry-title">Senior Product Design Prototyper</div>
-        <div class="entry-date">September 2021 – July 2023</div>
-      </div>
-      <div class="entry-employer">
-        <img src="images/MetaLogo.png" alt="Meta logo" class="company-logo">
-        Meta
-      </div>
-      <div class="entry-description">
-        <ul>
-          <li>Built many feature prototypes to validate, and ship features to keep people safe in the metaverse.</li>
-          <li>Built prototyping frameworks / network libraries using Unity to speed up my workflows and my fellow prototypers</li>
-        </ul>
-      </div>
-    </div>
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Senior Product Design Prototyper</div>
+                <div class="entry-date">September 2021 – July 2023</div>
+            </div>
+            <div class="entry-employer">
+                <img src="images/MetaLogo.png" alt="Meta logo" class="company-logo">
+                Meta
+            </div>
+            <div class="entry-description">
+                <ul>
+                    <li>Built many feature prototypes to validate, and ship features to keep people safe in the metaverse.</li>
+                    <li>Built prototyping frameworks / network libraries using Unity to speed up my workflows and my fellow prototypers</li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="entry">
-      <div class="entry-header">
-        <div class="entry-title">Lead 3D / Visual Effects Artist</div>
-        <div class="entry-date">August 2018 – August 2021</div>
-      </div>
-      <div class="entry-employer">
-        <img src="images/MetaLogo.png" alt="Meta logo" class="company-logo">
-        Meta
-      </div>
-      <div class="entry-description">
-        <ul>
-          <li>Promoted to lead quite fast after joining, led teams (some of my industry hero's) to deliver high-profile demo's for OC6</li>
-          <li>Did a stint as a VFX artist creating explosions and sparklies for the metaverse</li>
-          <li>Helped out and got a research paper credit</li>
-        </ul>
-      </div>
-    </div>
-    <div class="entry">
-      <div class="entry-header">
-        <div class="entry-title">Art & Design Intern</div>
-        <div class="entry-date">July 2017 – August 2017</div>
-      </div>
-      <div class="entry-employer">
-        <img src="images/MetaLogo.png" alt="Meta logo" class="company-logo">
-        Meta
-      </div>      <div class="entry-description">
-        <ul>
-          <li>Made pretty cool internal demos on a three.js based Web VR engine.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Lead 3D / Visual Effects Artist</div>
+                <div class="entry-date">August 2018 – August 2021</div>
+            </div>
+                        <div class="entry-employer">
+                <img src="images/MetaLogo.png" alt="Meta logo" class="company-logo">
+                Meta
+            </div>
+            <div class="entry-description">
+                <ul>
+                    <li>Promoted to lead quite fast after joining, led teams (some of my industry hero's) to deliver high-profile demo's for OC6</li>
+                    <li>Did a stint as a VFX artist creating explosions and sparklies for the metaverse</li>
+                    <li>Helped out and got a research paper credit</li>
+                </ul>
+            </div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Art & Design Intern</div>
+                <div class="entry-date">July 2017 – August 2017</div>
+            </div>
+            <div class="entry-employer">
+                <img src="images/MetaLogo.png" alt="Meta logo" class="company-logo">
+                Meta
+            </div>
+            <div class="entry-description">
+                <ul>
+                    <li>Made pretty cool internal demos on a three.js based Web VR engine.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-  <section class="section">
-    <h2 class="section-title">Education</h2>
-    <div class="education-item">
-      <div class="entry-header">
-        <div class="entry-title">Bachelor of Fine Arts in Game Art & Design</div>
-        <div class="entry-date">2014 – 2018</div>
-      </div>
-      <div class="entry-employer">Ringling College of Art & Design</div>
-    </div>
-  </section>
+    <section class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+            <div class="entry-header">
+                <div class="entry-title">Bachelor of Fine Arts in Game Art & Design</div>
+                <div class="entry-date">2014 – 2018</div>
+            </div>
+            <div class="entry-employer">
+                <img src="https://via.placeholder.com/20" alt="Ringling College logo" class="company-logo">
+                Ringling College of Art & Design
+            </div>
+        </div>
+    </section>
 
-  <section class="section">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-container">
-      <div class="skill-category">
-        <div class="skill-category-title">Technical</div>
-        <div class="skill-list">Typescript, C#, Unity, Unreal Engine, HTML/CSS, React</div>
-      </div>
-      <div class="skill-category">
-        <div class="skill-category-title">Design & Art</div>
-        <div class="skill-list">Modo, Blender, Figma, Adobe Creative Suite, Design Systems, Information Architecture</div>
-      </div>
-      <div class="skill-category">
-        <div class="skill-category-title">Research</div>
-        <div class="skill-list">User Interviews, Usability Testing, Survey Design, Analytics, A/B Testing</div>
-      </div>
-    </div>
-  </section>
+    <section class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <div class="skill-category-title">Technical</div>
+                <div class="skill-list">Typescript, C#, Unity, Unreal Engine, HTML/CSS, React</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">Design & Art</div>
+                <div class="skill-list">Modo, Blender, Figma, Adobe Creative Suite, Design Systems, Information Architecture</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">Research</div>
+                <div class="skill-list">User Interviews, Usability Testing, Survey Design, Analytics, A/B Testing</div>
+            </div>
+        </div>
+    </section>
 </div>
 
 <script>
-  const pdfButton = document.getElementById('pdfButton');
-  const closeButton = document.getElementById('closeButton');
-  let isDismissed = false;
+    const pdfButton = document.getElementById('pdfButton');
+    const closeButton = document.getElementById('closeButton');
+    let isDismissed = false;
 
-  // Show button when scrolling down
-  window.addEventListener('scroll', () => {
-    if (!isDismissed && window.scrollY > 200) {
-      pdfButton.classList.add('visible');
-    } else if (window.scrollY <= 200) {
-      pdfButton.classList.remove('visible');
-    }
-  });
+    // Show button when scrolling down
+    window.addEventListener('scroll', () => {
+        if (!isDismissed && window.scrollY > 200) {
+            pdfButton.classList.add('visible');
+        } else if (window.scrollY <= 200) {
+            pdfButton.classList.remove('visible');
+        }
+    });
 
-  // Print PDF
-  pdfButton.addEventListener('click', (e) => {
-    if (!e.target.classList.contains('close-btn') && e.target.parentElement !== closeButton) {
-      window.print();
-    }
-  });
+    // Print PDF
+    pdfButton.addEventListener('click', (e) => {
+        if (!e.target.classList.contains('close-btn') && e.target.parentElement !== closeButton) {
+            window.print();
+        }
+    });
 
-  // Dismiss button
-  closeButton.addEventListener('click', (e) => {
-    e.stopPropagation();
-    isDismissed = true;
-    pdfButton.classList.remove('visible');
-  });
+    // Dismiss button
+    closeButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        isDismissed = true;
+        pdfButton.classList.remove('visible');
+    });
 </script>
 </body>
 </html>
