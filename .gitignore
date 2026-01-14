@@ -2,3 +2,4 @@
 .idea/
 # Temp Development Files
 temp/
+.DS_Store
