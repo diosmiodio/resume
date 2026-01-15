@@ -62,7 +62,7 @@ Technical designer with 9+ years shipping spatial computing experiences. As an e
 
 ## Education
 
-### Bachelor of Fine Arts in Game Art & Design
+### BFA in Game Art & Design
 **Ringling College of Art & Design** | 2014 – 2018
 
 ### Industrial Design Concentration
@@ -72,8 +72,6 @@ Technical designer with 9+ years shipping spatial computing experiences. As an e
 
 ## Skills
 
-**Technical:** TypeScript, C#, JavaScript, Unity, Unreal Engine, Shader Development, 3D Math, Declarative UI (React-style, SwiftUI-transferable)
+**Technical:** TypeScript, C#, JavaScript, Unity, Unreal Engine, Shaders, 3D Math, Declarative UI, Prototyping, Performance Optimization
 
-**Art & Design:** Technical Art, Real-time VFX, Lighting, Spatial UI/UX, Modo, Blender, Maya
-
-**Platforms:** Meta Quest, VR/MR, Spatial Computing, Performance Optimization
+**Art & Design:** Technical Art, Real-time VFX, Lighting, Spatial UI/UX, Modo, Blender, Maya, Figma, Adobe Suite, Substance Designer/Painter
