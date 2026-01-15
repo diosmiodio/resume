@@ -8,7 +8,7 @@
 
 ## Summary
 
-Technical designer with 9+ years shipping spatial computing experiences. As an engineer, designer, and artist, I build everything from real-time VFX to interaction systems and gameplay code.
+Technical designer with 9+ years shipping spatial experiences. I believe good design is invisible. As an engineer, designer, and artist, I build everything from real-time VFX to interaction systems and gameplay systems.
 
 ---
 
@@ -18,7 +18,7 @@ Technical designer with 9+ years shipping spatial computing experiences. As an e
 **OURO Interactive, Oculus Studios (Meta)** | May 2023 – Present
 <!-- logo: images/OuroLogo.png -->
 
-- Shipped Super Rumble and Super Strike on Horizon Worlds; Super Rumble garnered [first major positive press coverage](https://www.theverge.com/23820366/super-rumble-meta-quest-metaverse-horizon-worlds) for the platform
+- Shipped Super Rumble and Super Strike on Horizon Worlds; Super Rumble garnered [first major positive press coverage](https://www.theverge.com/23820366/super-rumble-meta-quest-metaverse-horizon-worlds) for the platform. Led on-site demos at Meta Connect
 - Owned design and implementation of NUX flows, HUD systems, aim-assist, and input systems across cloud-streamed mobile/desktop and native VR
 - Led engineering for unannounced co-op VR roguelite; architected behavior tree AI systems and created status effect framework enabling designers to rapidly prototype gameplay. Delivered playable core loop to executive review
 - Led performance optimization across rendering and gameplay systems using Unity Profiler, Frame Debugger, Memory Profiler, Perfetto, and RenderDoc. Shipped at consistent 72fps on Quest hardware
@@ -72,6 +72,6 @@ Technical designer with 9+ years shipping spatial computing experiences. As an e
 
 ## Skills
 
-**Technical:** TypeScript, C#, JavaScript, Unity, Unreal Engine, Shaders, 3D Math, Declarative UI, Prototyping, Performance Optimization
+**Technical:** TypeScript, C#, 3D Math, Shaders, Declarative UI, Prototyping, Unity, Unreal Engine, Performance optimization, Rendering pipelines
 
-**Art & Design:** Technical Art, Real-time VFX, Lighting, Spatial UI/UX, Modo, Blender, Maya, Figma, Adobe Suite, Substance Designer/Painter
+**Art & Design:** Technical Art, Real-time VFX, UI/UX, Spatial UI/UX, Lighting, Modo, Blender, Maya, Figma, Adobe Suite, Substance Designer/Painter
