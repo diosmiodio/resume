@@ -8,7 +8,7 @@
 
 ## Summary
 
-Technical designer with 9+ years shipping spatial experiences. I believe good design is invisible. As an engineer, designer, and artist, I build everything from real-time VFX to interaction systems and gameplay systems.
+Technical designer with 9+ years shipping games and spatial computing experiences. I believe good design is invisible. As an engineer, designer, and artist, I build everything from real-time VFX to interaction systems and gameplay systems.
 
 ---
 
@@ -20,7 +20,7 @@ Technical designer with 9+ years shipping spatial experiences. I believe good de
 
 - Shipped Super Rumble and Super Strike on Horizon Worlds; Super Rumble garnered [first major positive press coverage](https://www.theverge.com/23820366/super-rumble-meta-quest-metaverse-horizon-worlds) for the platform. Led on-site demos at Meta Connect
 - Owned design and implementation of NUX flows, HUD systems, aim-assist, and input systems across cloud-streamed mobile/desktop and native VR
-- Led engineering for unannounced co-op VR roguelite; architected behavior tree AI systems and created status effect framework enabling designers to rapidly prototype gameplay. Delivered playable core loop to executive review
+- Led engineering for unannounced co-op VR rogue-lite; architected behavior tree AI systems and created status effect framework enabling designers to rapidly prototype gameplay. Delivered playable core loop to executive review
 - Led performance optimization across rendering and gameplay systems using Unity Profiler, Frame Debugger, Memory Profiler, Perfetto, and RenderDoc. Shipped at consistent 72fps on Quest hardware
 - Established code patterns and reviewed 300+ diffs, raising engineering standards across the studio
 
