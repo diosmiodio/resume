@@ -24,7 +24,7 @@ Technical designer with 9+ years building spatial computing experiences. Backgro
 - Led engineering for 6 months on co-op VR roguelite. Partnered with art director on 1-week sprint to redefine core loop, architecting encounter systems to nail pacing. Delivered playable build to executive review.
 
 ### Senior Product Design Prototyper
-**Meta** | September 2021 – May 2023
+**Meta** | August 2021 – May 2023
 
 - Sole prototyper on Horizon's Integrity team, shipping Pause, Thanks, and voice privacy controls. Owned design through UXR validation; created production art and VFX for Thanks.
 - Built avatar recording system for abuse scenario testing that captured and replayed audio, animation, and transform data. Created networked prototyping environment adopted across Meta teams.
