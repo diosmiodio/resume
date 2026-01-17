@@ -8,7 +8,7 @@
 
 ## Summary
 
-Technical designer with 9+ years building spatial computing experiences who believes great design is invisible. As a designer, engineer, and artist I craft systems spanning interaction design, gameplay, developer tools, and real-time VFX. Strong foundation in 3D mathematics and performance optimization.
+Technical designer with 9+ years building spatial computing experiences. Background spanning interaction design, gameplay systems, developer tools, and real-time VFX. Strong foundation in 3D math and performance optimization.
 
 ---
 
@@ -17,11 +17,11 @@ Technical designer with 9+ years building spatial computing experiences who beli
 ### Senior Technical Game Designer
 **OURO Interactive, Oculus Studios (Meta)** | May 2023 – Present
 
-- Core technical designer on Super Rumble and Super Strike for Horizon Worlds, shipping with a 2-person and 5-person engineering team respectively. Super Rumble earned the platform's [first major positive press coverage](https://www.theverge.com/23820366/super-rumble-meta-quest-metaverse-horizon-worlds); led on-site demos at Meta Connect.
-- Shipped systems across three titles spanning aim-assist with client-side prediction, actor synchronization, HUD frameworks, damage numbers, NUX flows, haptics tuning, ability station UX, status effects, and behavior tree AI.
-- Designed developer debugging tool with filtering UI and log visualization; adopted studio-wide and open-sourced to external creators. Built frame distributor to throttle React VR updates under CPU budget.
-- Prototyped Super Strike in under one week using shared codebase, then led mobile platform pivot designing aim-assist and trajectory prediction to compensate for cloud-streaming latency.
-- Led engineering for 6 months on co-op VR roguelite; when project stalled, partnered with art director on 1-week sprint to redefine core loop. Continued development to playable build shown in executive review.
+- Core technical designer on Super Rumble and Super Strike for Horizon Worlds, shipping with 2-person and 5-person engineering teams. Super Rumble earned the platform's [first major positive press coverage](https://www.theverge.com/23820366/super-rumble-meta-quest-metaverse-horizon-worlds); led hands-on VR demos for press and attendees at Meta Connect.
+- Architected aim-assist with client-side prediction, actor synchronization, and cross-platform input systems supporting VR and cloud-streamed mobile. Refactored core AI behavior trees and shipped gameplay systems with designer-tunable parameters for rapid iteration.
+- Built developer debugging tool with filtering UI to overcome Horizon's logging limitations; adopted studio-wide and released to external creators. Designed frame distributor to spread expensive operations across frames with priority tuning, ensuring critical gameplay updates never dropped.
+- Prototyped Super Strike in under one week. Designed aim-assist and trajectory prediction to mask ~100ms cloud-streaming latency.
+- Led engineering for 6 months on co-op VR roguelite. Partnered with art director on 1-week sprint to redefine core loop, architecting encounter systems to nail pacing. Delivered playable build to executive review.
 
 ### Senior Product Design Prototyper
 **Meta** | September 2021 – May 2023
@@ -36,7 +36,6 @@ Technical designer with 9+ years building spatial computing experiences who beli
 
 - Led 5-person art team delivering Hub demo for Oculus Connect 6 keynote; built environment end-to-end under strict performance budgets.
 - Shipped visual overhaul of Venues Beta; hosted Facebook Connect 2020 to thousands of concurrent VR attendees. Established art workflows and mentored incoming artists.
-- Delivered prototypes with code and shaders adopted by engineering.
 - Collaborated with XR Tech (Computational Photography) to visualize depth estimation for [SIGGRAPH-published research](https://github.com/facebookresearch/consistent_depth).
 - Established environment art pipeline with strict performance guidelines; trained artists on baking and lighting workflow.
 
@@ -48,7 +47,7 @@ Technical designer with 9+ years building spatial computing experiences who beli
 ### Founder
 **Neotrade VR** | Summer 2016
 
-- Founded VR startup; led team to build interactive pitch demo in Unreal Engine. Owned art direction, Blueprints programming, lighting, and environment art.
+- Founded VR startup; led team to build interactive pitch demo in Unreal Engine. Owned art direction, Blueprints programming, and lighting.
 
 ---
 
