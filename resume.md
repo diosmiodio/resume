@@ -18,7 +18,7 @@ Technical designer with 9+ years building spatial computing experiences. Backgro
 **OURO Interactive, Oculus Studios (Meta)** | May 2023 – Present
 
 - Core technical designer on Super Rumble and Super Strike for Horizon Worlds, shipping with 2-person and 5-person engineering teams. Super Rumble earned the platform's [first major positive press coverage](https://www.theverge.com/23820366/super-rumble-meta-quest-metaverse-horizon-worlds); led hands-on VR demos for press and attendees at Meta Connect.
-- Architected aim-assist with client-side prediction, actor synchronization, and cross-platform input systems supporting VR and cloud-streamed mobile. Refactored core AI behavior trees and shipped gameplay systems with designer-tunable parameters for rapid iteration.
+- Architected aim-assist with client-side prediction, actor synchronization, and cross-platform input systems supporting VR and cloud-streamed mobile. Refactored core AI behavior trees and built gameplay systems with designer-tunable parameters for rapid iteration.
 - Built developer debugging tool with filtering UI to overcome Horizon's logging limitations; adopted studio-wide and released to external creators. Designed frame distributor to spread expensive operations across frames with priority tuning, ensuring critical gameplay updates never dropped.
 - Prototyped Super Strike in under one week. Designed aim-assist and trajectory prediction to mask ~100ms cloud-streaming latency.
 - Led engineering for 6 months on co-op VR roguelite. Partnered with art director on 1-week sprint to redefine core loop, architecting encounter systems to nail pacing. Delivered playable build to executive review.
