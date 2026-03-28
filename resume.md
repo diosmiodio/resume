@@ -26,7 +26,7 @@ Technical designer and artist with 9+ years building spatial experiences — shi
 ### Senior Product Design Prototyper
 **Meta** | August 2021 – May 2023
 
-- Sole prototyper on Meta's Integrity team, shipping Pause, Thanks, and voice privacy controls. Owned design through UXR validation; created production art and VFX for Thanks.
+- Sole prototyper on the Integrity team for Meta's social VR platform, shipping Pause, Thanks, and voice privacy controls. Owned design through UXR validation; created production art and VFX for Thanks.
 - Built avatar recording system for abuse scenario testing that captured and replayed audio, animation, and transform data. Created networked prototyping environment adopted across Meta teams.
 - Partnered with creative director as sole technical prototyper for Meta's social VR hub; built mini-games and spatial micro-interactions including physics-based movement systems.
 - Led Emotes from concept to ship: designed interactions, created VFX, owned final shipped assets.
