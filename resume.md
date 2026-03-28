@@ -19,16 +19,16 @@ Technical designer and artist with 9+ years building spatial experiences — shi
 
 - Core technical designer on Super Rumble and Super Strike, shipping with 2-person and 5-person engineering teams on Meta's social VR platform. Super Rumble earned the platform's [first major positive press coverage](https://www.theverge.com/23820366/super-rumble-meta-quest-metaverse-horizon-worlds); led hands-on VR demos for press and attendees at Meta Connect.
 - Architected aim-assist with client-side prediction, actor synchronization, and cross-platform input systems supporting VR and cloud-streamed mobile. Refactored core AI behavior trees and built gameplay systems with designer-tunable parameters for rapid iteration.
-- Built developer debugging tool with filtering UI to overcome Horizon's logging limitations; adopted studio-wide and released to external creators. Designed frame distributor to spread expensive operations across frames with priority tuning, ensuring critical gameplay updates never dropped.
+- Built developer debugging tool with filtering UI to overcome the platform's logging limitations; adopted studio-wide and released to external creators. Designed frame distributor to spread expensive operations across frames with priority tuning, ensuring critical gameplay updates never dropped.
 - Prototyped Super Strike in under one week. Designed aim-assist and trajectory prediction to mask ~100ms cloud-streaming latency.
 - Led engineering for 6 months on co-op VR roguelite. Partnered with art director on 1-week sprint to redefine core loop, architecting encounter systems to nail pacing. Delivered playable build to executive review.
 
 ### Senior Product Design Prototyper
 **Meta** | August 2021 – May 2023
 
-- Sole prototyper on Horizon's Integrity team, shipping Pause, Thanks, and voice privacy controls. Owned design through UXR validation; created production art and VFX for Thanks.
+- Sole prototyper on the Integrity team for Meta's social VR platform, shipping Pause, Thanks, and voice privacy controls. Owned design through UXR validation; created production art and VFX for Thanks.
 - Built avatar recording system for abuse scenario testing that captured and replayed audio, animation, and transform data. Created networked prototyping environment adopted across Meta teams.
-- Partnered with creative director as sole technical prototyper for Horizon's central hub; built mini-games and spatial micro-interactions including physics-based movement systems.
+- Partnered with creative director as sole technical prototyper for Meta's social VR hub; built mini-games and spatial micro-interactions including physics-based movement systems.
 - Led Emotes from concept to ship: designed interactions, created VFX, owned final shipped assets.
 
 ### Lead 3D Artist / Visual Effects Artist
