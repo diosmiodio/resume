@@ -1,6 +1,6 @@
 # Dionisio Blanco
 
-**Senior Technical Designer, AR/VR**
+**Senior Technical Designer**
 
 [hi@diosmiodio.com](mailto:hi@diosmiodio.com) • [diosmiodio.com (portfolio)](https://diosmiodio.com)
 
