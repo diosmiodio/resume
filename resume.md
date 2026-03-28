@@ -1,6 +1,6 @@
 # Dionisio Blanco
 
-**Senior Technical Designer, AR/VR**
+**Senior Technical Designer**
 
 [hi@diosmiodio.com](mailto:hi@diosmiodio.com) • [diosmiodio.com (portfolio)](https://diosmiodio.com)
 
@@ -8,7 +8,7 @@
 
 ## Summary
 
-Technical designer with 9+ years building spatial computing experiences. Background spanning interaction design, gameplay systems, developer tools, and real-time VFX. Strong foundation in 3D math and performance optimization.
+Technical designer and artist with 9+ years building spatial experiences — shipping consumer VR products, leading art teams for keynote demos, and contributing to SIGGRAPH-published research. I move fluidly between design and implementation, bringing both aesthetic judgment and technical depth to wherever the work needs it most.
 
 ---
 
@@ -17,7 +17,7 @@ Technical designer with 9+ years building spatial computing experiences. Backgro
 ### Senior Technical Game Designer
 **OURO Interactive, Oculus Studios (Meta)** | May 2023 – Present
 
-- Core technical designer on Super Rumble and Super Strike for Horizon Worlds, shipping with 2-person and 5-person engineering teams. Super Rumble earned the platform's [first major positive press coverage](https://www.theverge.com/23820366/super-rumble-meta-quest-metaverse-horizon-worlds); led hands-on VR demos for press and attendees at Meta Connect.
+- Core technical designer on Super Rumble and Super Strike, shipping with 2-person and 5-person engineering teams on Meta's social VR platform. Super Rumble earned the platform's [first major positive press coverage](https://www.theverge.com/23820366/super-rumble-meta-quest-metaverse-horizon-worlds); led hands-on VR demos for press and attendees at Meta Connect.
 - Architected aim-assist with client-side prediction, actor synchronization, and cross-platform input systems supporting VR and cloud-streamed mobile. Refactored core AI behavior trees and built gameplay systems with designer-tunable parameters for rapid iteration.
 - Built developer debugging tool with filtering UI to overcome Horizon's logging limitations; adopted studio-wide and released to external creators. Designed frame distributor to spread expensive operations across frames with priority tuning, ensuring critical gameplay updates never dropped.
 - Prototyped Super Strike in under one week. Designed aim-assist and trajectory prediction to mask ~100ms cloud-streaming latency.
