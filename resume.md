@@ -61,6 +61,6 @@ Technical designer and artist with 9+ years building spatial experiences — shi
 
 ## Skills
 
-**Art & Design:** Spatial UI/UX, UI/UX, Real-time VFX, Technical Art, Lighting, Figma, Maya, Modo, Blender, Adobe Suite, Substance Designer/Painter
-
 **Technical:** TypeScript, C#, Unity, Unreal Engine, 3D Math, Shaders, Performance optimization, Rendering pipelines, Prototyping, Declarative UI
+
+**Art & Design:** Spatial UI/UX, UI/UX, Real-time VFX, Technical Art, Lighting, Figma, Maya, Modo, Blender, Adobe Suite, Substance Designer/Painter
